@@ -20,3 +20,4 @@ jobs:
          username: ${{ secrets.DOCKER_HUB_NAME }}
          password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
+     - run: echo "hello wolrd"

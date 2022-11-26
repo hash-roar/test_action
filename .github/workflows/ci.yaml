@@ -33,5 +33,5 @@ jobs:
      - name: add known_hosts
        run: ssh-keyscan -p 22 -H ${{ secrets.SE_SSH_IP }}  >> ~/.ssh/known_hosts
      - name: run docker compose in server
-       run: docker compose -H ${{ secrets.SSH_DSN }} up 
+       run: docker  -H ${{ secrets.SSH_DSN }} compose up 
 

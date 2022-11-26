@@ -8,5 +8,6 @@ jobs:
   Test-Docker:
     runs-on: ubuntu-latest
     steps:
-      - name: 
+      #    - name: set up env
+      - run: echo "hello wolrd"
 

@@ -1,3 +1,5 @@
 FROM ubuntu
 
-RUN echo "hello world"
+WORKDIR /app
+COPY . .
+CMD [ "/bin/ls","-al" ]

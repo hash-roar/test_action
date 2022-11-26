@@ -1,8 +1,6 @@
-version: "3.10"
+version: "3"
 services:
 
   test:
     build: ./
-
-    
-
+    command: ./1.sh

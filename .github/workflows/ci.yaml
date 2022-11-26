@@ -25,4 +25,10 @@ jobs:
          context: .
          push: true
          tags: qiyuncui/testdocker:latest
+     - name: Install SSH Key
+       uses: shimataro/ssh-key-action@v2
+       with:
+         key: ${{ secrets.SE_SSH_PRIVATE_KEY }}
+     - name: run docker compose in server
+       run: docker compose -H ${{ secrets.SSH_DSN }} up 
 

@@ -2,5 +2,5 @@ version: "3"
 services:
 
   test:
-    build: ./
+    image: qiyuncui/testdocker
     command: ./1.sh

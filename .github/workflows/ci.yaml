@@ -19,5 +19,10 @@ jobs:
        with:
          username: ${{ secrets.DOCKER_HUB_NAME }}
          password: ${{ secrets.DOCKER_HUB_TOKEN }}
+     - name: Build and push Docker image
+       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+       with:
+         context: .
+         push: true
+         tags: qiyuncui/testdocker:latest
 
-     - run: docker compose up
